@@ -40,7 +40,7 @@ date_range = (end_date - start_date).days
 dates = [start_date + datetime.timedelta(days=np.random.randint(0, date_range)) for _ in range(n_samples)]
 
 # Crear un DataFrame con las variables predictoras, la variable a predecir y el campo de fechas
-data = {'Fecha': dates, 'Área': areas, 'Habitaciones': rooms, 'Antigüedad': ages, 'Precio': Y}
+data = {'Fecha': dates, 'Area': areas, 'Habitaciones': rooms, 'Antiguedad': ages, 'Precio': Y}
 df = pd.DataFrame(data)
 
 # Exportar el DataFrame a un archivo de Excel
